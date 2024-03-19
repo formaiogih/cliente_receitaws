@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário IMC</title>
+    <script src="js/index.js"></script>
+    <!-- <script src="dist/bundle.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
+</head>
+<body>
+    <header>
+        <h1>Consulte o CNPJ de uma empresa!</h1>
+    </header>
+    
+    <form src="js/formulario.js">
+        <div id="triangulocima"></div>
+
+        <p>
+            Digite seu CNPJ:
+            <input class="escrever" type="number" id="cnpj" name="cnpj" required="required"><br>
+
+        <input id="botao" type="button" value="Pesquisar informações no Receita WS" onclick="chamarServicoReceitaWS()" required="required">
+
+        <article id="printresultado">
+            <p><span id="resultado"></span></p>  
+        </article>
+
+        <article>
+            <div id="triangulobaixo"></div>
+        </article>
+    </form>
+</body>
+</html>
+
+
+
+
